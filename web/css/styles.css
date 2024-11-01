@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #2A3F54;
+    width: 250px;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #1ABB9C;
+}
+
+.topbar {
+    background-color: #34495E;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    left: 250px;
+    right: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.topbar .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}

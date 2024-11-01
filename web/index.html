@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eel Desktop App</title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tableauData.js"></script>
+</head>
+<body>
+    <h1>Eel Desktop App</h1>
+    <button onclick="downloadDataFromWorksheet('シート 1')">Download</button>
+    <button onclick="getDataFromWorksheet('シート 1')">df</button> 
+    <input type="text" id="messageInput" placeholder="メッセージを入力" />
+    <button onclick="sendMessage()">Pythonへ送信</button>
+    <div id="vizContainer"></div>
+</body>
+</html>
